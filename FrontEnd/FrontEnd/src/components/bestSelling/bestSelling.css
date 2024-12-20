@@ -1,0 +1,100 @@
+/* Products Container */
+.best-selling-products-container {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  height: 100vh;
+  overflow-x: auto;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  /* margin: auto; */
+  /* display: grid;
+    height: calc(100vh - 64px);
+    max-height: 100vh;
+    overflow-y: auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem; */
+  }
+  
+  .best-selling-product-card {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    /* height: ; */
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+  
+  .best-selling-product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .best-selling-add-to-cart-btn {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+
+  .best-selling-product-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    /* background-color: red; */
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+
+  .best-selling-product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .best-selling-product-name{
+    color: rgb(0, 0, 0);
+  } 
+
+  .best-selling-product-price{
+    color: rgb(72, 72, 72);
+  }    
+  
+  .best-selling-product-description-container{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 10px;
+  }
+
+  .best-selling-product-description-heading{
+    color: rgb(72, 72, 72);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .best-selling-product-description{
+    color: rgb(72, 72, 72);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: start;
+  }
+
+  .best-selling-no-products-found{
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(72, 72, 72);
+  }
